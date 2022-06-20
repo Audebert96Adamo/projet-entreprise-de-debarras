@@ -6,11 +6,17 @@
   list-style: none;
   text-decoration: none;
   font-family: 'Kdam Thmor Pro', sans-serif;
+  scroll-behavior: smooth;
 }
+.nav-style-contact,
 .nav-style {
   display: grid;
   grid-template-columns: 30% 70%;
   align-items: center;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  background: rgb(255, 255, 255);
 }
 .nav-style ul, .nav-style h1 {
   display: flex;
@@ -121,7 +127,7 @@ section {
 }
 button {
   margin: 30px 0 20px 0;
-  padding: 20px 50px;
+  padding: 20px 30px;
   border: 1px solid rgb(189, 186, 186);
   background:  rgb(250, 242, 242);
   text-transform: uppercase;
@@ -146,6 +152,20 @@ button:hover {
 }
 .fas, .fa {
   margin: 0 0 0 12px;
+}
+.schedule,
+.schedule th {
+  border: 1px solid rgb(204, 191, 148);
+  background: rgb(204, 191, 148);
+  border-radius: 15px;
+  padding: 5px;
+  text-align: center;
+}
+.open {
+  color: rgb(13, 165, 20);
+}
+.close {
+  color: red;
 }
 footer {
   background: rgb(202, 192, 157);
